@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-primary: 'Roboto', sans-serif;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 72%, 13%);
+  --secondary-color: hsl(191, 65%, 7%);
+}
+
+/* button,
+input {
+  font-family: var(--ff-primary);
+} */
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+#app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.5rem 0;
+}
+
+header .github-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header #input-search {
+  height: 48px;
+  width: 400px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  border: none;
+  padding: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #7c7c8a;
+}
+
+header .search-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 8px;
+  height: 48px;
+  text-transform: uppercase;
+  background: #065e7c;
+  border-radius: 5px;
+  border: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 14px;
+  width: 170px;
+  cursor: pointer;
+}
+
+header .search-btn:hover {
+  background: #ffffff;
+  color: hsla(195, 91%, 25%, 1);
+}
+
+header .search-btn:hover path {
+  fill: hsla(195, 91%, 25%, 1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  padding: 1.5rem;
+  /* border: 1px solid #4a808c; */
+}
+
+/* pseudo-class */
+table th:first-child {
+  border-top-left-radius: 0.4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.4rem;
+  text-align: center;
+}
+
+table tr {
+  background: hsl(195, 61%, 6%);
+}
+
+table tr:nth-child(even) {
+  background: var(--secondary-color);
+}
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.users {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.users img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.users a {
+  text-decoration: none;
+}
+
+td.users a p {
+  font-weight: bold;
+}
+
+td .remove-btn {
+  background: none;
+  border: none;
+  color: #f75a68;
+  cursor: pointer;
+}
+
+table td:last-child {
+  text-align: center;
+}
