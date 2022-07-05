@@ -163,3 +163,23 @@ td .remove-btn {
 table td:last-child {
   text-align: center;
 }
+
+.empty-fav {
+  height: 40vh;
+  color: #4e5455;
+  font-weight: bold;
+  font-size: clamp(2rem, 2.5rem + 5vw, 2.7rem);
+}
+
+.empty-fav svg {
+  width: clamp(8rem, 8rem + 10vw, 10rem);
+  height: auto;
+}
+
+.empty-fav .empty-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+}
