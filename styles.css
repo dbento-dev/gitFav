@@ -183,3 +183,9 @@ table td:last-child {
   justify-content: center;
   gap: 3rem;
 }
+
+.empty-content span {
+  color: #4e5455;
+  font-weight: bold;
+  font-size: clamp(2rem, 2.5rem + 5vw, 2.7rem);
+}
